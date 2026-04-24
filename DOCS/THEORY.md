@@ -35,14 +35,6 @@ Para ilustrar la interacción entre puertos e IPs, es útil visualizar la arquit
 1.  **Imágenes Vectoriales (ej. .svg):** Son ideales para diagramas de red porque no pierden calidad al hacer zoom. Se basan en fórmulas matemáticas para definir líneas y formas.
 2.  **Imágenes de Trama (ej. .jpeg, .png):** Son imágenes basadas en una cuadrícula de píxeles. El formato `.jpeg`, común en capturas de pantalla de terminales (como el diagrama a continuación), es excelente para fotos con gradientes, pero puede "pixelarse" o perder nitidez si se amplía demasiado, a diferencia de un vector.
 
-A continuación, un diagrama que ilustra el flujo de conexión en nuestro chat:
-
-<p align="center">
-  <img src="Imágenes/prueba/client_server_terminal.jpeg" width="600" title="Diagrama de Conexión Cliente-Servidor (.jpeg)">
-  <br>
-  <em>Ilustración del flujo de conexión. Note que como es una imagen de trama (.jpeg), su nitidez es fija.</em>
-</p>
-
 
 ### Clasificación de Puertos:
 * **Puertos bien conocidos (0 - 1023):** Reservados para servicios del sistema y protocolos estándar (ej: HTTP 80, HTTPS 443, SSH 22).
