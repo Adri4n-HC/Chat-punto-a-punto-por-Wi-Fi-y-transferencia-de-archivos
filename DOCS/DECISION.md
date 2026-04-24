@@ -34,3 +34,9 @@ Durante la fase de pruebas, nos enfrentamos a los siguientes obstáculos:
    * **Solución:** El Firewall de Windows Defender del equipo servidor estaba bloqueando las conexiones entrantes. Se resolvió creando una regla de entrada en el Firewall para permitir el tráfico TCP en el puerto `5050`, o alternativamente, configurando la red del Hotspot como "Privada" en lugar de "Pública".
 2. **Problema:** Confusión con la dirección IP al conectar el cliente.
    * **Solución:** Al ejecutar `ipconfig`, el sistema mostraba múltiples adaptadores (VirtualBox, Wi-Fi principal, etc.). Se documentó que el cliente debe usar estrictamente la dirección IPv4 correspondiente al adaptador de la red hospedada creada por `netsh`, ignorando la IP del Wi-Fi que da salida a internet.
+  
+# Decisiones Técnicas
+
+## Problemas encontrados y cómo se resolvieron
+* **Problema:** Durante la primera prueba de conexión en red física, el cliente mostraba error de conexión (timeout/refused) a pesar de estar compartiendo la misma red y usar la IP correcta.
+* **Solución:** Se identificó que el Firewall del sistema operativo del servidor estaba bloqueando el puerto entrante (5050).
