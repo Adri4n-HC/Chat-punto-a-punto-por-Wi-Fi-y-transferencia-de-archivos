@@ -20,11 +20,29 @@ Los dos protocolos de transporte más utilizados tienen características opuesta
 | **Uso ideal** | Web (HTTP), Email (SMTP), Transferencia de archivos (FTP). | Streaming de video, Juegos online, VoIP. |
 
 
+# Teoría de Redes y Sockets
+
+... (las primeras secciones se mantienen igual) ...
 
 ## 3. Puertos y Direcciones IP
 Para que la comunicación ocurra, se necesitan dos identificadores:
 * **Dirección IP:** Identifica de forma única a un host en la red.
 * **Puerto:** Identifica un proceso o servicio específico dentro de ese host.
+
+### Visualización y Tipos de Imagen
+Para ilustrar la interacción entre puertos e IPs, es útil visualizar la arquitectura. En documentación técnica, nos encontramos con dos tipos principales de imágenes para diagramas:
+
+1.  **Imágenes Vectoriales (ej. .svg):** Son ideales para diagramas de red porque no pierden calidad al hacer zoom. Se basan en fórmulas matemáticas para definir líneas y formas.
+2.  **Imágenes de Trama (ej. .jpeg, .png):** Son imágenes basadas en una cuadrícula de píxeles. El formato `.jpeg`, común en capturas de pantalla de terminales (como el diagrama a continuación), es excelente para fotos con gradientes, pero puede "pixelarse" o perder nitidez si se amplía demasiado, a diferencia de un vector.
+
+A continuación, un diagrama que ilustra el flujo de conexión en nuestro chat:
+
+<p align="center">
+  <img src="Imágenes/prueba/client_server_terminal.jpeg" width="600" title="Diagrama de Conexión Cliente-Servidor (.jpeg)">
+  <br>
+  <em>Ilustración del flujo de conexión. Note que como es una imagen de trama (.jpeg), su nitidez es fija.</em>
+</p>
+
 
 ### Clasificación de Puertos:
 * **Puertos bien conocidos (0 - 1023):** Reservados para servicios del sistema y protocolos estándar (ej: HTTP 80, HTTPS 443, SSH 22).
